@@ -22,7 +22,7 @@ G. **Componente Raiz**: Todos os componentes mencionados acima são exibidos no 
 
 H. **Versionamento no Github**: O código-fonte do projeto está versionado no GitHub.
 
-I. **Hospedagem no Vercel**: O projeto está hospedado no Vercel.
+I. **Hospedagem no Vercel**: O projeto está hospedado no Vercel. link: https://athlete-explorer.vercel.app/
 
 ## Tecnologias Utilizadas
 
