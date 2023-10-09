@@ -20,9 +20,9 @@ function Home() {
   };
 
   // Filtrar apenas os jogadores de futebol
-  const jogadoresDeFutebol = data.filter(
-    (player) => player.strSport === 'Soccer'
-  );
+  // const jogadoresDeFutebol = data.filter(
+  //   (player) => player.strSport === 'Soccer'
+  // );
 
   return (
     <div className={styles.homeContainer}>
@@ -41,13 +41,18 @@ function Home() {
         />
       </div>
       <div className={styles.cardContainer}>
-        {jogadoresDeFutebol.map((player) => (
-          <CardAtleta
+
+        {data === null && 'SEM RESULTADOS PARA ESSA PESQUISA'}
+
+        {data?.map((player) => {
+          return player.strSport === 'Soccer' ? (
+            <CardAtleta
             key={player.idPlayer}
             atleta={player}
             favoriteArray={favoriteArray}
           />
-        ))}
+          ) : null;
+        })}
       </div>
     </div>
   );
